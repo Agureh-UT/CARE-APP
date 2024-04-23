@@ -60,12 +60,13 @@ nav .fa-solid {
     .nav-links {
         position: absolute;
         background-color: white;
+        color: black;
         width: 200px;
         height: 100vh;
         top: 0;
-        right: -200px;
+        right: 0; 
         text-align: left;
-        z-index: 2;
+        z-index: 10; 
         transition: 1s;
     }
 
@@ -77,13 +78,21 @@ nav .fa-solid {
         cursor: pointer;
     }
 
-    .nav-links ul li {
-        display: block;
+    .nav-links ul {
+        list-style: none; 
+        padding: 0; 
     }
 
-}
-.nav-links ul li:hover {
-    color: #9c2483; /* Change color on hover */
+    .nav-links ul li {
+        display: block;
+        padding: 8px 12px;
+        color: black; 
+        transition: color 0.3s ease; 
+    }
+
+    .nav-links ul li:hover {
+        color: #9c2483; /
+    }
 }
 
 .why-us,
