@@ -36,12 +36,26 @@
             <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
             <ul>
               <li>HOME</li>
-              <li>SERVICES</li>
-              <li>RESOURCES</li>
+              <li class="dropdown">
+                <a href="#">SERVICES <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="#">Personal Care Assistant (PCA) Services</a>
+                  <a href="#">Setting Up PCA Services</a>
+                  <a href="#">Transition from PCA to CFSS</a>
+                  <a href="#">245D</a>
+                  <a href="#">Aspen Financial Management Services</a>
+                  <a href="#">Social Services</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#">RESOURCES <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="#">Homemakers, PCA's, CNA's, RN's</a>
+                </div>
+              </li>
               <li>CAREERS</li>
               <li>ABOUT</li>
               <li>CONTACT</li>
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
             </ul>
           </div>
           <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -50,25 +64,40 @@
     </header>
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-          <div class="carousel-item active">
-              <img src="images/live-independently-at-home-mn.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item active">
+          <img src="images/live-independently-at-home-mn.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>FMS</h5>
+            <p>For those looking to self direct their services through consumer directed community supports (CDCS) or the Consumer Support Grant (CS6). Aspen FMS provides help with financial tasks, billing. and employer-related responsibilities. This means Aspen’s role is to support your loved one to fulfill his or her responsibilities in being the employer of his or her workers</p>
+            <button class="btn-learn-more">LEARN MORE</button>
           </div>
-          <div class="carousel-item">
-              <img src="images/minnesota-home-care-agency.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/minnesota-home-care-agency.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>245D</h5>
+            <p>To improve the dignity, health, and independence of those we serve, Minnesota Quality Care offers 245D services to people with disabilities and those over the age of 65. These services can provide the level of assistance, supervision and care that is necessary to ensure the health and saftey of your loved one. This includes ICLS, Homemaker Services. Personal Support, or Respite Care Services</p>
+            <button class="btn-learn-more">LEARN MORE</button>
           </div>
-          <div class="carousel-item">
-              <img src="images/live-independently-at-home-mn.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/live-independently-at-home-mn.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>PCA Services</h5>
+            <p>Minnesota Quality Care, Inc, is a Minneapolis home care provider that specializes in Personal Care Assistant (PCA) services. A home health provider helps you find the right personal care assistance for you. PCA Services are a type of non-medical health care that enables people to live live independently within their homes and stay in their community.</p>
+            <button class="btn-learn-more">LEARN MORE</button>
           </div>
+        </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
       </button>
-  </div>
+    </div>
   
     <section class="why-us">
       <img src="images/minnesota-home-care-agency.jpg" alt="" />

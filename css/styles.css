@@ -21,17 +21,51 @@ nav {
     padding: 1% 2%;
 }
 .main-header {
-    /* Gray with 50% opacity */
-    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
-    background-image: linear-gradient(to bottom, rgba(231, 236, 239, 0), rgba(231, 236, 239, 1)); /* Linear gradient from transparent to #e7ecef */
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(to bottom, rgba(231, 236, 239, 0), rgba(231, 236, 239, 1));
 }
 
+.nav-links .dropdown {
+    position: relative;
+}
 
-.sticky-nav {
-    position: sticky;
-    top: 0;
-    background-color: white;
+.nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    border-top: 2px solid #9c2483;
+    text-align: left;
+    width: 200px; /* Adjust width as needed */
+    max-height: 300px; /* Adjust max-height as needed */
+    overflow-y: auto; /* Add scrollbar if content exceeds max-height */
+}
+
+.nav-links .dropdown-content a {
+    color: #333;
+    padding: 8px 12px;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-links .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-links .dropdown i {
+    margin-left: 5px;
+    color: #9c2483;
+}
+
+.nav-links ul li:hover ,
+.nav-links ul li a{
+    color: #9c2483;
+    cursor: pointer;
 }
 
 nav img {
@@ -47,6 +81,11 @@ nav img {
     list-style: none;
     padding: 8px 12px;
 }
+.nav-links ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
 
 nav .fa-solid {
     display: none;
@@ -58,15 +97,15 @@ nav .fa-solid {
     }
 
     .nav-links {
-        position: absolute;
+        position: fixed;
         background-color: white;
         color: black;
         width: 200px;
         height: 100vh;
         top: 0;
-        right: 0; 
+        right: 0;
         text-align: left;
-        z-index: 10; 
+        z-index: 10;
         transition: 1s;
     }
 
@@ -79,19 +118,19 @@ nav .fa-solid {
     }
 
     .nav-links ul {
-        list-style: none; 
-        padding: 0; 
+        list-style: none;
+        padding: 0;
     }
 
     .nav-links ul li {
         display: block;
         padding: 8px 12px;
-        color: black; 
-        transition: color 0.3s ease; 
+        color: black;
+        transition: color 0.3s ease;
     }
 
     .nav-links ul li:hover {
-        color: #9c2483; /
+        color: #9c2483;
     }
 }
 
@@ -265,25 +304,60 @@ footer p {
         margin-right: 2%;
     }
 }
+
 .carousel-item img {
-    width: 100%; /* Ensure images cover the whole width of their container */
-    height: 400px; /* Define the height of the carousel items */
-    object-fit: cover; /* Cover the entire carousel item */
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
 .carousel {
-    max-width: 100%; /* Reduce the maximum width of the carousel container */
-    margin: 0 auto; /* Center the carousel horizontally */
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%; /* Adjust the width of the control buttons */
+    width: 5%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(1); /* Invert the color of the control icons */
+    filter: invert(1);
 }
 
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
 
+.carousel-caption h5 {
+    font-size: 2rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+.carousel-caption button {
+    background-color: #651755;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        display: none;
+    }
+}
