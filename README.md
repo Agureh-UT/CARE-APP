@@ -1,5 +1,8 @@
 # CareUp
- **live link** {(https://care-app-sigma.vercel.app/)}
+
+## Live Demo
+[Live Demo Link](https://care-app-sigma.vercel.app/)
+
 ## Installation:
 
 To get started with CareUp, follow these simple installation steps:
